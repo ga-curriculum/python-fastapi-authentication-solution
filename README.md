@@ -2,7 +2,7 @@
 
 ## About
 
-This repo contains the solution code for the [Python FastAPI Authentication](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-serializers-and-controllers-lab/canvas-landing-pages/fallback.html) Lesson
+This repo contains the solution code for the [Python FastAPI Authentication](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/python-fastapi-authentication/canvas-landing-pages/fallback.html) Lesson
 
 ## Getting Started
 
