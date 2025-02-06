@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String
 from .base import BaseModel
 from passlib.context import CryptContext
-from datetime import datetime, timedelta  # New import for timestamps
+from datetime import datetime, timezone, timedelta  # New import for timestamps
 import jwt  # New import for token generation
 
 # Import the secret from the environment file
@@ -29,8 +29,8 @@ class UserModel(BaseModel):
     def generate_token(self):
         # Define the payload
         payload = {
-            "exp": datetime.utcnow() + timedelta(days=1),  # Expiration time (1 day)
-            "iat": datetime.utcnow(),  # Issued at time
+            "exp": datetime.now(timezone.utc) + timedelta(days=1),  # Expiration time (1 day)
+            "iat": datetime.now(timezone.utc),  # Issued at time
             "sub": self.id,  # Subject - the user ID
         }
 
