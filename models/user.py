@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-from .base import Base
+from .base import BaseModel
 from passlib.context import CryptContext
 from datetime import datetime, timedelta  # New import for timestamps
 import jwt  # New import for token generation
@@ -9,7 +9,7 @@ from config.environment import secret
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-class UserModel(Base):
+class UserModel(BaseModel):
 
     __tablename__ = "users"
 

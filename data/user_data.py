@@ -4,7 +4,7 @@ def create_test_users():
     user1 = UserModel(username="arjun_dev", email="arjun@devmail.in")
     user1.set_password("securepassword1")
     user2 = UserModel(username="emma_johnson", email="emma.johnson@email.com")
-    user user2.set_password("securepassword2")
+    user2.set_password("securepassword2")
     user3 = UserModel(username="fatima_ali", email="fatima.ali@mail.ae")
     user3.set_password("securepassword3")
     user4 = UserModel(username="lucas_silva", email="lucas.silva@correo.br")
